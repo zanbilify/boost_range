@@ -1,0 +1,33 @@
+[package]
+name = "boost_range"
+description = "Boost C++ library boost_range packaged using Zanbil"
+version = "0.1.0"
+edition = "2024"
+links = "boost_range"
+license = "BSL-1.0"
+repository = "https://github.com/zanbilify/boost_range"
+
+[package.metadata.zanbil]
+make_dependencies_public = true
+
+[dependencies]
+boost_array = { version = "0.1.0", path = "../boost_array" }
+boost_assert = { version = "0.1.0", path = "../boost_assert" }
+boost_concept_check = { version = "0.1.0", path = "../boost_concept_check" }
+boost_config = { version = "0.1.0", path = "../boost_config" }
+boost_container_hash = { version = "0.1.0", path = "../boost_container_hash" }
+boost_conversion = { version = "0.1.0", path = "../boost_conversion" }
+boost_core = { version = "0.1.0", path = "../boost_core" }
+boost_detail = { version = "0.1.0", path = "../boost_detail" }
+boost_iterator = { version = "0.1.0", path = "../boost_iterator" }
+boost_mpl = { version = "0.1.0", path = "../boost_mpl" }
+boost_optional = { version = "0.1.0", path = "../boost_optional" }
+boost_preprocessor = { version = "0.1.0", path = "../boost_preprocessor" }
+boost_regex = { version = "0.1.0", path = "../boost_regex" }
+boost_static_assert = { version = "0.1.0", path = "../boost_static_assert" }
+boost_tuple = { version = "0.1.0", path = "../boost_tuple" }
+boost_type_traits = { version = "0.1.0", path = "../boost_type_traits" }
+boost_utility = { version = "0.1.0", path = "../boost_utility" }
+
+[build-dependencies]
+zanbil-boost-build = "0.1.0"
